@@ -1,0 +1,18 @@
+# Extracta — Git line ending policy
+# Enforce LF for all Swift/iOS source files regardless of OS
+
+*.swift     text eol=lf
+*.md        text eol=lf
+*.txt       text eol=lf
+*.json      text eol=lf
+*.yaml      text eol=lf
+*.yml       text eol=lf
+*.gitignore text eol=lf
+
+# Binary — never touch line endings
+*.png       binary
+*.jpg       binary
+*.jpeg      binary
+*.pdf       binary
+*.zip       binary
+*.ipa       binary

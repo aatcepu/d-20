@@ -1,0 +1,22 @@
+# 1. Ignore EVERYTHING in the root directory
+/*
+
+# 2. UN-ignore the specific folders we want to back up
+!/Desktop/
+!/Documents/
+!/Downloads/
+!/.gitignore
+
+# 3. Re-ignore heavy macOS & Xcode junk INSIDE those allowed folders
+.DS_Store
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xcbkptlist
+
+# Extra rules to block large installers and Xcode caches
+*.dmg
+*.mdb
+Index.noindex/
+Index/
